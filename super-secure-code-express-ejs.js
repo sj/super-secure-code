@@ -16,7 +16,7 @@ function generateForm(){
 }
 
 function generateConfirmation(age){
-    // TODO
+    return "TODO!"
 }
 
 // Respond to GET requests: send form or confirmation
