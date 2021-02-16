@@ -41,12 +41,8 @@ jobs:
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v1
       with:
-        languages: ${{ matrix.language }}
-        
-        # Enable server-side template injection query
-        queries: github/codeql/javascript/ql/src/Security/CWE-094/CodeInjection.ql@main
-        disable-default-queries: true
-        
+        config-file: ./.github/codeql-config.yml
+
     # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
     # If this step fails, then you should remove it and run the build manually (see below)
     - name: Autobuild

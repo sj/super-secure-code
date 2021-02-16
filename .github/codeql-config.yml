@@ -1,0 +1,6 @@
+name: "My CodeQL analysis configuration"
+
+disable-default-queries: true
+
+queries:
+  - github/codeql/javascript/ql/src/Security/CWE-094/CodeInjection.ql@main
