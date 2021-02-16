@@ -4,4 +4,4 @@ disable-default-queries: true
 
 queries:
   - name: Code Injection query
-    uses: github/codeql/javascript/ql/src/Security/CWE-094/CodeInjection.ql@main
+    uses: github/codeql/javascript/ql/src/Security/CWE-094/CodeInjection.ql@8db234f5f32314d162049c5f7af5006444e0e2b3
