@@ -44,7 +44,7 @@ jobs:
         languages: ${{ matrix.language }}
         
         # Enable server-side template injection query
-        queries: github/codeql/javascript/ql/src/experimental/Security/CWE-94/ServerSideTemplateInjection.ql@main
+        queries: github/codeql/javascript/ql/src/Security/CWE-094/CodeInjection.ql@main
         
     # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
     # If this step fails, then you should remove it and run the build manually (see below)
