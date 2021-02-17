@@ -21,7 +21,7 @@ function generateConfirmation(age){
     </body></html>`
 
     date = new Date()
-    return ejs.render(template,{time: date.toLocaleTimeString()}) 
+    return ejs.render(template,{time: date.toLocaleTimeString()})  
 }
 
 // Respond to GET requests: send form or confirmation
