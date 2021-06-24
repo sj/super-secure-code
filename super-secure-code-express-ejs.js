@@ -24,6 +24,7 @@ function generateConfirmation(age){
     return ejs.render(template,{time: date.toLocaleTimeString()})  
 }
 
+
 // Respond to GET requests: send form or confirmation
 app.get('/', (request, response) => {
     if ('age' in request.query){
