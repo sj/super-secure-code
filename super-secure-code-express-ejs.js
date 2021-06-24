@@ -16,7 +16,12 @@ function generateForm(){
 }
 
 function generateConfirmation(age){
-    return "TODO!"
+    var template =`<html><body>
+        You are ${age}. The time is <%= time %>.
+    </body></html>`
+
+    date = new Date()
+    return ejs.render(template,{time: date.toLocaleTimeString()})  
 }
 
 // Respond to GET requests: send form or confirmation
